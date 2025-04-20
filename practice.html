@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Exercises - Exam Study Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Exam Study Guide</div>
+            <button class="mobile-menu-btn">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="knowledge-representation.html">Knowledge Representation</a></li>
+                    <li><a href="prolog.html">Prolog</a></li>
+                    <li><a href="bayes-nets.html">Bayes Nets</a></li>
+                    <li><a href="practice.html" class="active">Practice Exercises</a></li>
+                    <li><a href="study-plan.html">Study Plan</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container page-layout">
+            <aside class="sidebar">
+                <div class="sidebar-nav">
+                    <h3>Practice Exercises</h3>
+                    <ul>
+                        <li><a href="#kr" id="kr">Knowledge Representation</a></li>
+                        <li><a href="#prolog" id="prolog">Prolog</a></li>
+                        <li><a href="#bayes" id="bayes">Bayes Nets</a></li>
+                        <li><a href="#integrated" id="integrated">Integrated Problems</a></li>
+                        <li><a href="#solutions" id="solutions">Solutions</a></li>
+                    </ul>
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="knowledge-representation.html">KR Study Guide</a></li>
+                        <li><a href="prolog.html">Prolog Study Guide</a></li>
+                        <li><a href="bayes-nets.html">Bayes Nets Study Guide</a></li>
+                    </ul>
+                </div>
+            </aside>
+            
+            <div class="main-content">
+                <div class="content">
+                    <!-- Content will be inserted here during conversion -->
+                    <div id="practice-content-placeholder">
+                        <h1>Integrated Practice Exercises</h1>
+                        <p>Content is loading...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Exam Study Guide. Created to help you succeed in your exam.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/contrib/auto-render.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: "$$", right: "$$", display: true},
+                    {left: "$", right: "$", display: false}
+                ]
+            });
+        });
+    </script>
+</body>
+</html>
